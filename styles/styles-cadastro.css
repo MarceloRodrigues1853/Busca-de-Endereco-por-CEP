@@ -1,0 +1,112 @@
+@import url("header.css");
+@import url("banner.css");
+@import url("formulario.css");
+@import url("rodape.css");
+
+:root {
+    --cor-de-fundo: #EBECEE;
+    --branco: #FFFFFF;
+    --laranja: #EB9B00;
+    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --fonte-principal: "Poppins";
+    --azul: #002F52;
+    --fonte-secundario: "Josefin Sans";
+    --preto: #000000;
+    --cinza: #474646;
+    --cinza-claro: #858585;
+    --vermelho: #D94937;
+}
+
+body {
+    background-color: var(--branco);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.cadastro {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 2em;
+}
+
+.cadastro__imagem {
+    display: block;
+    margin: 3em auto 0 auto;
+}
+
+.cadastro__subtitulo {
+    margin: 1em 0;
+}
+
+.botao-voltar {
+  display: inline-block;
+  background-color: var(--laranja); /* Cor de fundo do botão */
+  color: white; /* Cor do texto */
+  padding: 10px 20px; /* Espaçamento interno */
+  border-radius: 5px; /* Borda arredondada */
+  text-decoration: none; /* Remove o sublinhado padrão */
+  margin-top: 20px; /* Espaçamento superior */
+  transition: background-color 0.3s; /* Efeito de transição suave */
+}
+
+.botao-voltar:hover {
+  background-color: var(--cinza);
+}
+
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 460px) {
+  .cabeçalho {
+    width: auto;
+  }
+
+  .banner {
+    height: 100px; 
+  }
+
+  .principal {
+    width: 380px;
+    height: 500px;
+    padding: 1em; 
+  }
+
+  .principal__titulo {
+    font-size: 24px; 
+  }
+
+  .principal__subtitulo {
+    font-size: 16px; 
+  }
+
+  .principal__texto {
+    font-size: 14px;
+  }
+
+  .cadastro__imagem {
+    max-width: 380px; 
+    height: auto; 
+  }
+
+  .rodapé {
+    background: var(--azul-degrade); 
+    color: var(--branco);
+    height: auto;
+    padding: 1.6em; 
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    row-gap: 18px;
+  }
+ 
+  .rodapé__titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  .lista-rodapé {
+    display: none;
+  }
+}
