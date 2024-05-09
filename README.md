@@ -25,7 +25,7 @@ O projeto **Busca de Endereço por CEP** é uma aplicação web que permite aos 
 
 ## Como usar:
 
-Para acessar a aplicação, [clique aqui](https://marcelorodrigues1853.github.io/cep-search/).
+Para acessar a aplicação, [clique aqui](https://busca-de-endereco-por-cep.vercel.app/).
 
 ## Contribuição:
 
